@@ -3,4 +3,10 @@ import {sayHi} from './const';
 
 sayHi();
 
-// console.log(syncedDelay(3e3));
+/*
+console.log(new Date()); // current date
+
+syncedDelay(3000); // "pause" process for 3 seconds
+
+console.log(new Date());  // current date, but plus 3 seconds
+*/

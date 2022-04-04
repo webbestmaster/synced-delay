@@ -1,14 +1,25 @@
 # Synced Delay
 
-## Installation
+[![GitHub license](https://img.shields.io/npm/l/synced-delay)](https://github.com/webbestmaster/synced-delay/blob/master/license)
+[![npm version](https://img.shields.io/npm/v/synced-delay.svg?style=flat)](https://www.npmjs.com/package/synced-delay)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/synced-delay)
+<!-- [![GitHub stars](https://img.shields.io/github/stars/webbestmaster/synced-delay?style=social&maxAge=2592000)](https://github.com/webbestmaster/synced-delay/) -->
 
-1. install nodejs (node v14.x+npm v6.x or node v16.x+npm v7.x) for your platform
-2. go to project's directory
-3. run `npm i` or `npm i --legacy-peer-deps`
+Bad method to "pause" process.
 
+## Install
 
-## Dev mode
+```bash
+npm i synced-delay
+```
 
-1. make installation
-2. go to project's directory
-3. run `npm start`
+## Usage
+```typescript jsx
+import {syncedDelay, SyncedDelayResultType} from 'synced-delay';
+
+console.log(new Date()); // current date/time
+
+syncedDelay(3000); // "pause" process for 3 seconds
+
+console.log(new Date());  // current date/time, but plus 3 seconds
+```
