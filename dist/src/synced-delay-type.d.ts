@@ -1,4 +1,4 @@
-export declare type SyncedDelayResultType = {
+export type SyncedDelayResultType = {
     deltaTime: number;
     endTime: number;
     iterationCount: number;
