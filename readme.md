@@ -6,11 +6,11 @@
 ![Known Vulnerabilities](https://snyk.io/test/github/webbestmaster/synced-delay/badge.svg)
 [![Github CI](https://github.com/webbestmaster/synced-delay/actions/workflows/github-ci.yml/badge.svg)](https://github.com/webbestmaster/synced-delay/actions/workflows/github-ci.yml)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/webbestmaster/synced-delay/github-ci.yml)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/webbestmaster/synced-delay)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/synced-delay)
 ![node-current](https://img.shields.io/node/v/synced-delay)
 ![npm type definitions](https://img.shields.io/npm/types/synced-delay)
 [![GitHub stars](https://img.shields.io/github/stars/webbestmaster/synced-delay?style=social)](https://github.com/webbestmaster/synced-delay/)
+<!-- ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/webbestmaster/synced-delay) -->
 
 Bad method to "pause" process.
 
