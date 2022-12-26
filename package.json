@@ -14,7 +14,7 @@
     "email": "web.best.master@gmail.com"
   },
   "version": "1.0.4",
-  "description": "",
+  "description": "Bad method to \"pause\" process",
   "keywords": [
     "synced",
     "delay",

@@ -10,6 +10,7 @@
 ![node-current](https://img.shields.io/node/v/synced-delay)
 ![npm type definitions](https://img.shields.io/npm/types/synced-delay)
 [![GitHub stars](https://img.shields.io/github/stars/webbestmaster/synced-delay?style=social)](https://github.com/webbestmaster/synced-delay/)
+
 <!-- ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/webbestmaster/synced-delay) -->
 
 Bad method to "pause" process.
