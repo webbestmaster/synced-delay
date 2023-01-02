@@ -12,6 +12,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/webbestmaster/synced-delay/github-ci.yml)](https://github.com/webbestmaster/synced-delay/actions/workflows/github-ci.yml)
 [![Type definitions](https://img.shields.io/npm/types/synced-delay)](https://www.typescriptlang.org)
 [![Website](https://img.shields.io/website?url=https://github.com/webbestmaster/synced-delay)](https://github.com/webbestmaster/synced-delay)
+[![Package Quality](https://packagequality.com/shield/synced-delay.svg)](https://packagequality.com/#?package=synced-delay)
 [![GitHub stars](https://img.shields.io/github/stars/webbestmaster/synced-delay?style=social)](https://github.com/webbestmaster/synced-delay)
 
 
