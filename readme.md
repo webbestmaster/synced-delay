@@ -5,7 +5,6 @@
 [![npm version](https://img.shields.io/npm/v/synced-delay.svg)](https://www.npmjs.com/package/synced-delay)
 [![Known Vulnerabilities](https://snyk.io/test/github/webbestmaster/synced-delay/badge.svg)](https://snyk.io/test/github/webbestmaster/synced-delay)
 [![Dependency count](https://badgen.net/bundlephobia/dependency-count/synced-delay)](https://libraries.io/npm/synced-delay)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/webbestmaster/synced-delay)](https://libraries.io/npm/synced-delay)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/synced-delay)](https://bundlephobia.com/package/synced-delay)
 [![nodejs version](https://img.shields.io/node/v/synced-delay)](https://nodejs.org/en/docs)
 [![Github CI](https://github.com/webbestmaster/synced-delay/actions/workflows/github-ci.yml/badge.svg)](https://github.com/webbestmaster/synced-delay/actions/workflows/github-ci.yml)
@@ -16,6 +15,9 @@
 [![Package Quality](https://packagequality.com/shield/synced-delay.svg)](https://packagequality.com/#?package=synced-delay)
 [![GitHub stars](https://img.shields.io/github/stars/webbestmaster/synced-delay?style=social)](https://github.com/webbestmaster/synced-delay)
 
+<!--
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/webbestmaster/synced-delay)](https://libraries.io/npm/synced-delay)
+-->
 
 Bad method to "pause" process.
 
