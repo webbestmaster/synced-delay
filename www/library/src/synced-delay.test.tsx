@@ -1,41 +1,42 @@
-import assert from 'node:assert/strict';
-
-import {describe, test} from '@jest/globals';
+import {describe, it, expect} from '@jest/globals';
 
 import {syncedDelay} from './synced-delay';
 import {SyncedDelayResultType} from './synced-delay-type';
 
-describe('Synced Delay', () => {
-    test('Main call, check accuracy', () => {
+describe('synced delay', () => {
+    it('main call, check accuracy', () => {
+        expect.assertions(2);
         const delayTime = 3e3;
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(delayTime);
         const testEndTimeStamp = Date.now();
         const deltaTime = testEndTimeStamp - testBeginTimeStamp;
 
-        assert.equal(Math.abs(syncedDelayResult.deltaTime - deltaTime) < 100, true);
-        assert.equal(Math.abs(delayTime - deltaTime) < 100, true);
+        expect(Math.abs(syncedDelayResult.deltaTime - deltaTime)).toBeLessThan(100);
+        expect(Math.abs(delayTime - deltaTime)).toBeLessThan(100);
     });
 
-    test('Zero call', () => {
+    it('zero call', () => {
+        expect.assertions(3);
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(0);
         const testEndTimeStamp = Date.now();
         const deltaTime = testEndTimeStamp - testBeginTimeStamp;
 
-        assert.equal(Math.abs(syncedDelayResult.deltaTime - deltaTime) < 10, true);
-        assert.equal(deltaTime < 10, true);
-        assert.equal(syncedDelayResult.iterationCount === 0, true);
+        expect(Math.abs(syncedDelayResult.deltaTime - deltaTime)).toBeLessThan(10);
+        expect(deltaTime).toBeLessThan(10);
+        expect(syncedDelayResult.iterationCount).toBe(0);
     });
 
-    test('NaN call, check accuracy', () => {
+    it('the NaN call, check accuracy', () => {
+        expect.assertions(3);
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(Number.NaN);
         const testEndTimeStamp = Date.now();
         const deltaTime = testEndTimeStamp - testBeginTimeStamp;
 
-        assert.equal(Math.abs(syncedDelayResult.deltaTime - deltaTime) < 10, true);
-        assert.equal(deltaTime < 10, true);
-        assert.equal(syncedDelayResult.iterationCount === 0, true);
+        expect(Math.abs(syncedDelayResult.deltaTime - deltaTime)).toBeLessThan(10);
+        expect(deltaTime).toBeLessThan(10);
+        expect(syncedDelayResult.iterationCount).toBe(0);
     });
 });

@@ -27,10 +27,3 @@ declare module '*.txt' {
 declare const IS_PRODUCTION: unknown;
 
 declare const BUILD_DATE_H: unknown;
-
-/*
-declare module '*.scss';
-declare module '*.png';
-declare module '*.jpg';
-declare module '*.mp3';
-*/

@@ -4,8 +4,7 @@
 export function sayHi() {
     const {log} = console;
 
-    // http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Empty
-    // Font: ANSI Shadow
+    // http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Empty, Font: ANSI Shadow
     const hiString = `
 
     ███████╗██╗   ██╗███╗   ██╗ ██████╗███████╗██████╗

@@ -7,8 +7,10 @@ export function syncedDelay(timeMs: number): SyncedDelayResultType {
 
     // eslint-disable-next-line no-loops/no-loops
     while (startTime + timeMs > endTime) {
-        // heavy operation
-        Array.from({length: 1e5}).forEach(() => Date.now() ** Math.random());
+        // Heavy operation
+        Array.from({length: 1e5}).forEach(() => {
+            return Date.now() ** Math.random();
+        });
 
         iterationCount += 1;
         endTime = Date.now();
