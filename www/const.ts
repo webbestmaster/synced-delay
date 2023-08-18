@@ -25,8 +25,8 @@ export function sayHi() {
 
     log(hiString);
 
-    log('Build date:', BUILD_DATE_H);
-    log('Is production:', IS_PRODUCTION);
+    log("Build date:", BUILD_DATE_H);
+    log("Is production:", IS_PRODUCTION);
 
-    log('===================\n');
+    log("===================\n");
 }

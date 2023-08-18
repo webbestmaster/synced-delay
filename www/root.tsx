@@ -1,4 +1,4 @@
-import {sayHi} from './const';
+import {sayHi} from "./const";
 
 // eslint-disable-next-line jest/require-hook
 sayHi();

@@ -1,4 +1,4 @@
-import {SyncedDelayResultType} from './synced-delay-type';
+import {SyncedDelayResultType} from "./synced-delay-type";
 
 export function syncedDelay(timeMs: number): SyncedDelayResultType {
     const startTime = Date.now();
