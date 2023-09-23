@@ -1,7 +1,7 @@
 import {describe, it, expect} from "@jest/globals";
 
 import {syncedDelay} from "./synced-delay";
-import {SyncedDelayResultType} from "./synced-delay-type";
+import type {SyncedDelayResultType} from "./synced-delay-type";
 
 describe("synced delay", () => {
     it("main call, check accuracy", () => {

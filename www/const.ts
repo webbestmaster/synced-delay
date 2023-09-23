@@ -1,7 +1,7 @@
 /* global BUILD_DATE_H, IS_PRODUCTION */
 /* eslint-disable id-match */
 
-export function sayHi() {
+export function sayHi(): void {
     const {log} = console;
 
     // http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Empty, Font: ANSI Shadow
