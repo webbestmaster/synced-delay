@@ -2,7 +2,6 @@ export function syncedDelay(timeMs) {
     const startTime = Date.now();
     let iterationCount = 0;
     let endTime = startTime;
-    // eslint-disable-next-line no-loops/no-loops
     while (startTime + timeMs > endTime) {
         // Heavy operation
         Array.from({ length: 1e5 }).forEach(() => {

@@ -1,5 +1,4 @@
 /* global BUILD_DATE_H, IS_PRODUCTION */
-/* eslint-disable id-match */
 
 export function sayHi(): void {
     const {log} = console;
