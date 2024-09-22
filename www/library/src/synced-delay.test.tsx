@@ -1,4 +1,4 @@
-import {describe, expect,it} from "@jest/globals";
+import {describe, expect, it} from "@jest/globals";
 
 import {syncedDelay} from "./synced-delay";
 import type {SyncedDelayResultType} from "./synced-delay-type";
@@ -6,6 +6,7 @@ import type {SyncedDelayResultType} from "./synced-delay-type";
 describe("synced delay", () => {
     it("main call, check accuracy", () => {
         expect.assertions(2);
+
         const delayTime = 3e3;
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(delayTime);
@@ -18,6 +19,7 @@ describe("synced delay", () => {
 
     it("zero call", () => {
         expect.assertions(3);
+
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(0);
         const testEndTimeStamp = Date.now();
@@ -30,6 +32,7 @@ describe("synced delay", () => {
 
     it("the NaN call, check accuracy", () => {
         expect.assertions(3);
+
         const testBeginTimeStamp = Date.now();
         const syncedDelayResult: SyncedDelayResultType = syncedDelay(Number.NaN);
         const testEndTimeStamp = Date.now();
